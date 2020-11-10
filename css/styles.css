@@ -1,4 +1,8 @@
 
 plus-btn {
- display: inline-block;
+  display: inline-block;
+}
+li{
+  list-style: none;
+  padding: .3%;
 }
