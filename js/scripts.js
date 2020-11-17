@@ -1,17 +1,15 @@
 document.addEventListener('DOMContentLoaded', function(){
-  const taskbtn = document.getElementById('plus-btn').addEventListener
+  const taskbtn = document.getElementById('addbutton').addEventListener
 
 
   
 
   ('click',(e)=> {
-  let input = document.createElement('input');
-  input.type = 'text';
-  //let task = prompt('What do you need to add?');
+  let input = document.getElementById('newtask').value;
   //capture content for list
 
   const newItem = document.createElement('li');
-  //create li for list
+  //create li for task list
 
   newItem.append(input);
   //add text to newly created li node
@@ -21,8 +19,13 @@ document.addEventListener('DOMContentLoaded', function(){
 
   let parentDiv =document.getElementById('not-sure');
   //reference to parent node
-  parentDiv.insertBefore(newItem, taskList);
 
+  parentDiv.insertBefore(newItem, taskList);
+  //insert into li
+
+  const form = document.getElementById('taskinput')
+  form.reset();
+  //clear form input after adding to list
 
   e.preventDefault();
   })

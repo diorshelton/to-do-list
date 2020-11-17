@@ -10,11 +10,20 @@
 </head>
 <body>
   <div class="container">
-    <h1 class="text-center">Task List</h1>
-    <h3>Tasks <img id ="plus-btn" src="assets/img/plus-sqare.svg"></h3> 
-    
+
+    <h1 class="text-center">Tasks</h1>
+
+      <form id="taskinput" class="col col-lg-6">
+        <input class= "form-control form-control-lg" type="text" name="entry" id="newtask" placeholder="enter item"> 
+        <button id="addbutton" type="button">
+          <img id ="plus-btn" src="assets/img/plus-sqare.svg">
+        </button>
+      </form>
+
+    <h2 class="text-center">Task List</h2>
       <div id="not-sure">
         <ul id="list">
+
         </ul>
       </div>
   </div>
