@@ -7,20 +7,22 @@
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <script src="js/scripts.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
 
-    <h1 class="text-center">Tasks</h1>
-
-      <form id="taskinput" class="col col-lg-6">
-        <input class= "form-control form-control-lg" type="text" name="entry" id="newtask" placeholder="enter item"> 
-        <button id="addbutton" type="submit">
-          <img id ="plus-btn" src="assets/img/plus.svg">
-        </button>
-      </form>
-
-    <h2 class="text-center">Task List</h2>
+    <h1 class="text-center">To Do</h1>
+      <div class="butonIn">
+        <form id="taskinput" class="col-sm-2">
+          <input class= "form-control .form-control-lg" type="text" name="entry" id="newtask" placeholder="Enter task here"> 
+          <button id="addbutton" type="submit">
+            <img id ="plus-btn" src="assets/img/plus.svg">
+          </button>
+       </form>
+      </div> 
+    <h2 class="text-center">My List</h2>
       <div id="not-sure">
         <ul id="list">
 

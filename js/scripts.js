@@ -1,14 +1,13 @@
 document.addEventListener('DOMContentLoaded', function(){
   const taskbtn = document.getElementById('addbutton');
   taskbtn.addEventListener('click',(e)=> {
+
   let input = document.getElementById('newtask').value;
   //capture content for list
 
   const newItem = document.createElement('li');
   //create li for task list
-
-  taskbtn.addEventListener('keydown', addToDo);
-
+  
   newItem.append(input);
   //add text to newly created li node
 
